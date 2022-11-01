@@ -12,6 +12,7 @@
 		"serve": "lerna run --parallel serve",
 		"clean": "lerna run --parallel clean",
 		"prepare": "lerna run yarn"
+		
 	},
 	"devDependencies": {
 		"lerna": "3.22.1"
