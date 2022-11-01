@@ -8,7 +8,7 @@ require("dotenv").config({ path: "./.env" });
 const buildDate = new Date().toLocaleString();
 
 module.exports = (env, argv) => {
-  const isProduction = argv.mode === "development";
+  const isProduction = argv.mode === "production";
   return {
     entry: "./src/index.ts",
     mode: process.env.NODE_ENV || "development",
@@ -62,6 +62,7 @@ module.exports = (env, argv) => {
         name: "container",
         remotes: {
           app1: isProduction ? process.env.PROD_APP1 : process.env.DEV_APP1,
+          app2: isProduction ? process.env.PROD_APP2 : process.env.DEV_APP2,
         },
         shared: {
           ...deps,

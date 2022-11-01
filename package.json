@@ -3,6 +3,7 @@
 	"workspaces": {
 		"packages": [
 			"app1",
+			"app2",
 			"container"
 		]
 	},
@@ -12,13 +13,11 @@
 		"serve": "lerna run --parallel serve",
 		"clean": "lerna run --parallel clean",
 		"prepare": "lerna run yarn"
-		
 	},
 	"devDependencies": {
 		"lerna": "3.22.1"
 	},
 	"dependencies": {
-		"@babel/core": "^7.19.6",
-		"yarn": "^1.22.19"
+		"@babel/core": "^7.19.6"
 	}
 }

@@ -6,3 +6,8 @@ declare module "app1/CounterAppOne" {
 	export default CounterAppOne;
 }
 
+declare module "app2/CounterAppTwo" {
+	const CounterAppTwo: React.ComponentType;
+
+	export default CounterAppTwo;
+}
