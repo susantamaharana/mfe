@@ -8,7 +8,7 @@ require("dotenv").config({ path: "./.env" });
 const buildDate = new Date().toLocaleString();
 
 module.exports = (env, argv) => {
-  const isProduction = argv.mode === "development";
+  const isProduction = argv.mode === "production";
   return {
     entry: "./src/index.ts",
     mode: process.env.NODE_ENV || "development",
